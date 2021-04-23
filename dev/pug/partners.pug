@@ -1,0 +1,83 @@
+extends layout/main
+
+block variables
+    -var title = 'Спонсоры и партнёры'
+
+block content
+    header.header.header-page
+        .container
+            nav.header-menu 
+                ul.header-menu__list
+                    li
+                        a(href="#") Программа
+                    li
+                        a(href="/about.html") О нас
+                    li
+                        a(href="/helpus.html") Помочь фестивалю
+                    li
+                        a(href="/partners.html").is-active Спонсоры и партнёры
+                .burger
+                    .burger-line.burger-line_top
+                    .burger-line.burger-line_mid
+                    .burger-line.burger-line_bot
+            .subhead-page
+                .subhead-page__content
+                    .subhead-page__content-desc X международный 
+                        br
+                        | фестивать джазовой музыки
+                    a(href="/").subhead-page__content-logo 
+                        img(src="/assets/images/common/jazzLogo.svg", alt="logo")
+                    .subhead-page__content-info 
+                        p Кассы 
+                            a(href="tel:483865") 
+                                strong 48-38-65
+                        p Инфо и билеты 
+                            a(href="http://penzakoncert.ru/") 
+                                strong penzakoncert.ru
+    section.page.partners
+        .container 
+            .page-content
+                .page-block
+                    h3.page-block__title Генеральный партнёр
+                    .page-block__list 
+                        .page-block__list-item 
+                            img(src="http://kuzbank.ru/bitrix/templates/bank/img/logo_2.png", alt="img")
+                .page-block
+                    h3.page-block__title Учредители
+                    .page-block__list 
+                        .page-block__list-item 
+                            img(src="/assets/images/common/minkult.png", alt="img")
+                        .page-block__list-item 
+                            img(src="/assets/images/common/pnzkoncert.png", alt="img")
+                .page-block
+                    h3.page-block__title Спонсоры и партнёры
+                    .page-block__list 
+                        .page-block__list-item 
+                            img(src="/assets/images/common/muzunion.png", alt="img")
+                        .page-block__list-item 
+                            img(src="/assets/images/common/funcorp.png", alt="img")
+                        .page-block__list-item 
+                            img(src="/assets/images/common/tortuga.png", alt="img")
+                        .page-block__list-item 
+                            img(src="/assets/images/common/bitgames.png", alt="img")
+                        .page-block__list-item 
+                            img(src="/assets/images/common/muzunion.png", alt="img")
+                .page-block
+                    h3.page-block__title Информационная поддержка
+                    .page-block__list 
+                        .page-block__list-item 
+                            img(src="/assets/images/common/muzunion.png", alt="img")
+                        .page-block__list-item 
+                            img(src="/assets/images/common/funcorp.png", alt="img")
+                        .page-block__list-item 
+                            img(src="/assets/images/common/tortuga.png", alt="img")
+                        .page-block__list-item 
+                            img(src="/assets/images/common/bitgames.png", alt="img")
+                        .page-block__list-item 
+                            img(src="/assets/images/common/muzunion.png", alt="img")
+                        .page-block__list-item 
+                            img(src="/assets/images/common/funcorp.png", alt="img")
+                        .page-block__list-item 
+                            img(src="/assets/images/common/tortuga.png", alt="img")
+                        .page-block__list-item 
+                            img(src="/assets/images/common/bitgames.png", alt="img")

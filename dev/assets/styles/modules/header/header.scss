@@ -1,0 +1,291 @@
+.header {
+    &-main {
+        background-image: url('/assets/images/common/bgMain.png');
+        background-repeat: no-repeat;
+        background-position: 70% 0;
+        @media (max-width: 1500px) {
+            background-position: center;
+        }
+        @media (max-width: 1000px) {
+            background-position: 20% 0;
+        }
+        @media (max-width: 768px) {
+            background-position: 60% 0;
+            background-size: cover;
+        }
+        @media (max-width: 427px) {
+            background-image: url('/assets/images/common/bgMainMob.png');
+            background-size: cover;
+        }
+        .container {
+            position: relative;
+        }
+        .icon-rating {
+            position: absolute;
+            right: 15px;
+            top: 69px;
+            fill: $white;
+            @media (max-width: 427px) {
+                display: none;
+            }
+        }
+    }
+    &-menu {
+        padding: 55px 0;
+        &__list {
+            display: flex;
+            @media (max-width: 768px) {
+                display: none;
+            }
+            li {
+                a {
+                    color: $white;
+                    display: block;
+                    margin-right: 69px;
+                    text-decoration: none;
+                    transition: .3s;
+                    @media (max-width: 1100px) {
+                        margin-right: 49px;
+                    }
+                    &:hover {
+                        color: $gold;
+                    }
+                }
+                &:last-child {
+                    a {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .subhead {
+        padding-top: 60px;
+        padding-bottom: 140px;
+        position: relative;
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (max-width: 427px) {
+                max-width: 240px;
+                margin: auto;
+            }
+        }
+        &-logo {
+            margin-bottom: 21px;
+        }
+        &-date {
+            font-family: 'ZangeziSans07';
+            text-align: center;
+            font-size: 80px;
+            line-height: 62px;
+            width: 260px;
+            border-bottom: 8px solid $gold;
+            padding-bottom: 20px;
+            margin-bottom: 22px;
+            color: $white;
+        }
+        &-desc {
+            max-width: 290px;
+            text-align: center;
+            line-height: 24px;
+            height: 82px;
+            color: $white;
+        }
+        &-info {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            text-align: right;
+            line-height: 24px;
+            @media (max-width: 768px) {
+                display: none;
+            }
+            &__block {
+                margin-bottom: 35px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &-link {
+                    line-height: 24px;
+                    text-decoration: none;
+                    color: $black;
+                    font-weight: bold;
+                    transition: .3s;
+                    &:hover {
+                        color: $gold;
+                    }
+                }
+            }
+        }
+    }
+    &-page {
+        background-image: url('/assets/images/common/bgPage.png');
+        background-repeat: no-repeat;
+        background-position: 55% 0;
+        height: 500px;
+        @media (max-width: 427px) {
+            background-image: url('/assets/images/common/bgPageMob.png');
+            background-size: cover;
+        }
+        .header {
+            &-menu {
+                padding-left: 100px;
+                @media (max-width: 1100px) {
+                    padding-left: 0;
+                }
+            }
+        } 
+        .subhead-page {
+            padding: 0 100px;
+            position: relative;
+            z-index: 10;
+            @media (max-width: 1100px) {
+                padding: 0;
+            }
+            &__content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                line-height: 24px;
+                color: $white;
+                &-desc {
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+                }
+                &-logo {
+                    @media (max-width: 768px) {
+                        margin: auto;
+                    }
+                }
+                &-info {
+                    text-align: right;
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                        transition: .3s;
+                        &:hover {
+                            color: $gold;
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.burger {
+    display: none;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    width: 32px;
+    transition: all .3s;
+    transition-delay: .3s;
+    z-index: 999;
+    @media (max-width: 768px) {
+        display: block;
+    }
+    &-line {
+        height: 4px;
+        width: 100%;
+        background: $white;
+        right: 0;
+        transition: all .3s;
+        &_top {
+            position: absolute;
+            top: 0;
+        }
+        &_mid {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &_bot {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    &_active {
+        transform: scale(-1, 1);
+        .burger-line {
+            &_top {
+                width: 17px;
+                transform: rotate(45deg);
+                top: 3px;
+                right: -5px;
+            }
+            &_mid {
+            }
+            &_bot {
+                width: 17px;
+                transform: rotate(-45deg);
+                bottom: 3px;
+                right: -5px;
+            }
+        }
+    }
+}
+
+.mob {
+    &-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        background-color: $white;
+        width: 100%;
+        z-index: 99;
+        background-image: url('/assets/images/common/bgMobile.png');
+        background-repeat: no-repeat;
+        background-position: center -100px;
+        transition: .3s;
+        &__content {
+            padding: 160px 30px 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 240px;
+            a {
+                color: $white;
+                text-decoration: none;
+                transition: .3s;
+                &:hover {
+                    color: $gold;
+                }
+            }
+        }
+        &__bot {
+            display: flex;
+            justify-content: space-between;
+            line-height: 24px;
+            a {
+                color: $black;
+                text-decoration: none;
+                transition: .3s;
+                &:hover {
+                    color: $gold;
+                }
+            }
+            &-cashbox {
+                text-align: right;
+            }
+        }
+        &_active {
+            left: 0;
+        }
+    }
+}
+

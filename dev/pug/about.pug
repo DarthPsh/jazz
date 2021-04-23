@@ -1,0 +1,55 @@
+extends layout/main
+
+block variables
+    -var title = 'О нас'
+
+block content
+    header.header.header-page
+        .container
+            nav.header-menu 
+                ul.header-menu__list 
+                    li
+                        a(href="#") Программа
+                    li
+                        a(href="/about.html").is-active О нас
+                    li
+                        a(href="/helpus.html") Помочь фестивалю
+                    li
+                        a(href="/partners.html") Спонсоры и партнёры
+                .burger
+                    .burger-line.burger-line_top
+                    .burger-line.burger-line_mid
+                    .burger-line.burger-line_bot
+            .subhead-page
+                .subhead-page__content
+                    .subhead-page__content-desc X международный 
+                        br
+                        | фестивать джазовой музыки
+                    a(href="/").subhead-page__content-logo 
+                        img(src="/assets/images/common/jazzLogo.svg", alt="logo")
+                    .subhead-page__content-info 
+                        p Кассы 
+                            a(href="tel:483865") 
+                                strong 48-38-65
+                        p Инфо и билеты 
+                            a(href="http://penzakoncert.ru/") 
+                                strong penzakoncert.ru
+    section.page.about
+        .container 
+            .page-content
+                h1.page-title.about-title 18–20 мая 2018 г. в Пензе пройдет очередной — уже восьмой по счету — международный фестиваль джазовой музыки «Jazz May Penza» («Джаз Май Пенза»).
+                .page-wrap.swiper-container 
+                    .swiper-wrapper
+                        .page-img.swiper-slide 
+                            img(src="/assets/images/common/about_1.png", alt="img")
+                        .page-img.swiper-slide  
+                            img(src="/assets/images/common/about_2.png", alt="img") 
+                article.page-article
+                    p Весенний фестиваль джаза впервые состоялся в пенза в 2011 году - и стал самым ярким событием музыкальной жизни не только города Пенза, но и всего Поволжского региона. Он сразу приобрел международный характер - гостями из-за рубежа в первый год работы фестиваля были джазмены из Италии. В следующем, 2012 году фестиваль вышел за рамки конценртных программ. Площадь перед зданием Пензенской областной филармонии была покрыта живым газоном, на котором было удобно сидеть или лежать, слушая музыку. Вокруг фестивальной площадки начал работу музыкальный арт-маркет, появился и традиционный праздник «город мастеров». Проект получился настолько многообещающим и необычным, что был выдвинут на соискание первой национальной премии в области событийного туризма «Russian Event Awards 2012». Премия фестивалю была присуждена в номинации «Лучший проект в области культуры».
+                    p В Jazz May Penza 2017 принимают участие джазовые коллективы и исполнители Пензы и города-спутника Заречного, а также гости из Москвы, Самары, Саратова, Саранска и др. Зарубежный джаз представляют музыканты из шести стран: США, Испании, Франции, Венгрии, Люксембурга и Украины. Существует идея вывести пензенский джазовый фестиваль на межрегиональный уровень. Министерство культуры и туризма Пензенской области рассматривает возможность организации в дни фестиваля пакетного тура, который, помимо знакомства с основными допромечательностями Пензы, будет включать в себя концертные программы и другие мероприятия фестиваля. В планах организаторов расширение географии фестиваля путем организации мини-туров для приглашенных музыкантов; чтобы в дни фестиваля их выступления проходили не только в Пензе, но и в соседних областных центрах.
+                .page-wrap.swiper-container 
+                    .swiper-wrapper
+                        .page-img.swiper-slide 
+                            img(src="/assets/images/common/about_3.png", alt="img")
+                        .page-img.swiper-slide  
+                            img(src="/assets/images/common/about_4.png", alt="img") 

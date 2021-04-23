@@ -1,0 +1,144 @@
+extends layout/main
+
+block variables
+	-var title = 'Главная страница'
+
+block content
+	header.header.header-main
+		.container
+			+icon('rating')
+			nav.header-menu 
+				ul.header-menu__list
+					li
+						a(href="#") Программа
+					li
+						a(href="/about.html") О нас
+					li
+						a(href="/helpus.html") Помочь фестивалю
+					li
+						a(href="/partners.html") Спонсоры и партнёры
+				.burger
+					.burger-line.burger-line_top
+					.burger-line.burger-line_mid
+					.burger-line.burger-line_bot 
+			.header-subhead.subhead
+					.subhead-content 
+						a(href="/").subhead-logo 
+							img(src="/assets/images/common/jazzLogo.svg", alt="logo")
+						.subhead-date 
+							.subhead-date__day 21-23
+							.subhead-date__month мая
+						.subhead-desc X международный фестиваль джазовой музыки
+						.subhead-info 
+							.subhead-info__block
+								.subhead-info__block-tittle Кассы
+								a(href="tel:48-38-65").subhead-info__block-link 48-38-65
+							.subhead-info__block
+								.subhead-info__block-tittle Инфо и билеты
+								a(href="https://penzakoncert.ru/").subhead-info__block-link penzakoncert.ru
+	section.main
+		.container
+			.main-content
+				.main-block.main-block_1
+					.main-block__wrap
+						.main-block_left 
+							.main-block__date 
+								.main-block__date_left 
+									.main-block__date-num.color_red 21
+								.main-block__date_right
+									.main-block__date_small 
+										+icon('clock')
+										| ККЗ «Пенза» 
+										strong 19:00
+									.main-block__date-month.color_red мая
+							.main-block__date.rain
+								.rain-logo 
+									+icon('rain')
+								strong.rain-desc 2 концертных отделения
+								strong.rain-desc 5 джазовых ансамблей
+								.rain-img 
+									img(src="/assets/images/common/bgRain.png", alt="img")
+						.main-block_right
+							.guest.color_red
+								.guest-title Специальные гости
+								.guest-name Экспресс-бэнд п/у Юрия Белоногова
+							.guest-desc 
+								strong Шоукейс джазового лейбла 
+									br
+									| Rainy Days (modern jazz)
+								br
+								p Москва-СПб-США 
+								p Саша Машин • Макар Новиков Бенито Гонзалес • Алина Енгибарян Дмитрий Мосьпан и др.
+				.main-block.main-block_2
+					.main-block__wrap
+						.main-block_left 
+							.main-block__date 
+								.main-block__date_left 
+									.main-block__date-num.color_green 22
+								.main-block__date_right
+									.main-block__date_small 
+										+icon('clock')
+										| ККЗ «Пенза» 
+										strong 19:00
+									.main-block__date-month.color_green мая
+						.main-block_right
+							.guest.color_green
+								.guest-img 
+									img(src="/assets/images/common/aset.png", alt="ASET")
+								.guest-title Специальный гость
+								.guest-name ASET
+								.guest_small вокал
+					.musicians
+						.musician
+							.musician-img 
+								img(src="/assets/images/common/dolzh.png", alt="img")
+							.musician-info
+								.musician-info__name Квинтет 
+									br
+									| Сергея Долженкова
+								.musician-info__genre Тромбон-фьюжн
+								.musician-info__city — Москва —
+						.musician
+							.musician-img 
+								img(src="/assets/images/common/crew.png", alt="img")
+							.musician-info
+								.musician-info__subname Группа 
+									br
+									| Вадима Эйленкрига
+								.musician-info__name Eilenkrig Crew
+								.musician-info__genre Традиционный джаз
+								.musician-info__city — Москва —
+				.main-block.main-block_3
+					.main-block__wrap
+						.main-block__date 
+							.main-block__date_left 
+								.main-block__date-num.color_blue 23
+							.main-block__date_right
+								.main-block__date_small 
+									+icon('clock')
+									| ККЗ «Пенза» 
+									strong 19:00
+								.main-block__date-month.color_blue мая
+					.musicians
+						.musician
+							.musician-img 
+								img(src="/assets/images/common/openSound.png", alt="img")
+							.musician-info
+								.musician-info__name Дмитрий
+									br 
+									| Селипанов и 
+									br
+									| OpenSound Orchestra
+								.musician-info__genre Неоклассика
+								.musician-info__city — Москва —
+						.musician
+							.musician-img 
+								img(src="/assets/images/common/manu.png", alt="img")
+							.musician-info
+								.musician-info__name Ансамбль
+									br
+									| Сергея Манукяна
+								.musician-info__genre Соул
+								.musician-info__city — Москва —
+				.main-download
+					a(href="#") Скачать программу фестиваля
