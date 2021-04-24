@@ -82,6 +82,9 @@ button { outline: none; }
 
 .main {
   position: relative;
+  .container {
+    overflow-x: hidden;
+  }
   &:before,
   &:after {
     content: '';
